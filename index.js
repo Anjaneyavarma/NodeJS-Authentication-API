@@ -18,7 +18,7 @@ app.use(express.json());
 app.use('/api/user', authRoute);
 
 //db config
-mongoose.connect('mongodb+srv://Anjaneyavarma:RPgC3HrEq1iNJqDn@cluster0.p4lk3.mongodb.net/<dbname>?retryWrites=true&w=majority', 
+mongoose.connect('mongodb', 
 { useNewUrlParser: true },
 ()=> console.log('connected to db'));
 
